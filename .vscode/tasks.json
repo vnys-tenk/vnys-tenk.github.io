@@ -6,7 +6,7 @@
     {
       "label": "start server",
       "type": "shell",
-      "command": "browser-sync start --server '.' --files '*.html, *.css, *.js' --port 3000 --no-ui --no-open",
+      "command": "browser-sync start --server '.' --files '*.html, *.css, *.js, *.svg' --port 3000 --no-ui --no-open",
       "presentation": {
         "reveal": "silent"
       },
