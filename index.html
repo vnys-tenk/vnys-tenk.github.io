@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+  <!--
+    Dette er en HTML kommentar.
+    Kommentarer er ikke synlig i nettleseren. Vi kan ha kommentarer i Javascript og CSS-filer også, men de ser litt annerledes ut.
+  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Dette er head-seksjonen – den inneholder informasjon til nettleseren, som f.eks. tittelen som vises i en fane eller et bokmerke, men som ikke vises direkte på siden.
+      Husk å endre tittelen så det ikke står «Document» når du er ferdig.
+    -->
+    <title>TENK Tech Camp 2023</title>
+    <!--
+      Dette er stilarket til websiden, det er der vi bestemmer hvordan designet skal se ut.
+    -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      Body-seksjonen inneholder alt det du kan se i nettleser-vinduet.
+      Hvert element er definert ved bruk av tagger, som f.eks. <div></div>.
+      Attributter som f.eks. class="button-primary" gjør at vi kan bestemme hvordan et element skal se ut med CSS.
+    -->
+    <div class="page">
+      <div class="top-bar">
+        <a href="./" class="button-primary">◀︎ Tilbake</a>
+        <svg class="top-bar-logo">
+          <use href="assets/tenk-logo.svg#logo"></use>
+        </svg>
+        <p class="top-bar-text">Tech Camp 2023</p>
+      </div>
+      <main class="main-centered">
+        <div class="content">
+          <h1 class="frontpage-heading">Bodils komponenter</h1>
+          <p class="frontpage-text">
+            Her er noen komponenter jeg har laget i dag:
+            <!-- 
+              Det vil si, jeg ble jo ikke helt ferdig 🙄 Håper du får gjort det
+              jeg ikke kom i mål med så ikke sjefen blir sur. 
+            -->
+          </p>
+          <ul class="frontpage-text">
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

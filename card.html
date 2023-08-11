@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+  <!--
+  Dette er en HTML kommentar.
+  Kommentarer er ikke synlig i nettleseren. Vi kan ha kommentarer i Javascript og CSS-filer også, men de ser litt annerledes ut.
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    Dette er head-seksjonen – den inneholder informasjon til nettleseren, som f.eks. tittelen som vises i en fane eller et bokmerke, men som ikke vises direkte på siden.
+    Husk å endre tittelen så det ikke står «Document» når du er ferdig.
+  -->
+    <title>TENK Tech Camp 2023 - Card</title>
+    <!--
+    Dette er stilarket til websiden, det er der vi bestemmer hvordan designet skal se ut.
+  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+    Body-seksjonen inneholder alt det du kan se i nettleser-vinduet.
+    Hvert element er definert ved bruk av tagger, som f.eks. <div></div>.
+    Attributter som f.eks. class="button-primary" gjør at vi kan bestemme hvordan et element skal se ut med CSS.
+  -->
+    <div class="page">
+      <div class="top-bar">
+        <a href="./" class="button-primary">◀︎ Tilbake</a>
+        <svg class="top-bar-logo">
+          <use href="assets/tenk-logo.svg#logo"></use>
+        </svg>
+        <p class="top-bar-text">Tech Camp 2023</p>
+      </div>
+      <main class="main">
+        <div class="content">
+          <h1 class="heading-xl">Card</h1>
+          <p class="description">
+            Eksempel på en card komponent. Kopier koden for å bruke den på siden
+            din.
+          </p>
+          <h2 class="heading-large">Card med bilde</h2>
+          <div class="preview">
+            <div class="preview-component">
+              <!-- Komponent start -->
+              <div class="card">
+                <!--  
+                  🚧 TODO: Legg til bilde her med klassen «card-image» ved å
+                  skrive img.card-image og så klikke på tab-tasten på
+                  tastaturet. Du kan bruke et av bildene i «bilder»-mappen,
+                  f.eks. kitten.png, ved å skrive "bilder/kitten.png" i src-attributtet.
+                  Tror vi bare driter i alt-attributtet, eller? Sikkert ingen
+                  blinde som skal bruke disse komponentene likevel 🤔 Spør en av
+                  de voksne hva de synes.
+                -->
+                <div class="card-content">
+                  <h2 class="card-title">Heading</h2>
+                  <p class="card-text">Some text</p>
+                  <div class="card-actions">
+                    <!--  
+                      🚧 TODO: Legg til to knapper her etter at du har laget
+                      button-komponenten, en med teksten «Ok» og en med teksten
+                      «Avbryt». Legg til et class-attributt med verdien "button-primary".
+                      Ta en titt i script-filen, der er det to funksjoner du kan kalle når noen klikker på knappene. -->
+                  </div>
+                </div>
+              </div>
+              <!-- Komponent slutt -->
+            </div>
+            <div class="preview-code">
+              <pre><code>&lt;div class=&quot;card&quot;&gt;
+  &lt;img class=&quot;card-image&quot; src=&quot;assets/kitten.png&quot; alt=&quot;&quot; /&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    &lt;h2 class=&quot;card-title&quot;&gt;Heading&lt;/h2&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some text&lt;/p&gt;
+    &lt;div class=&quot;card-actions&quot;&gt;
+      &lt;button class=&quot;button-primary&quot;&gt;Ok&lt;/button&gt;
+      &lt;button class=&quot;button-primary&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--
+    Dette er Javascriptet til websiden.
+  -->
+    <script src="script.js"></script>
+  </body>
+</html>
